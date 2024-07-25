@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+    background-image: url(pic/gym1.jpg); /* Replace 'your-image.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    color: aliceblue;
+}
+
+   
+
+#head{
+    height: 60px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+#content{
+    height: 500px;
+    grid-row-start: 2;
+    grid-row-end: 6;
+
+}
+#footer{
+    height: 55px;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+ ul{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+ ul li{
+    list-style:none;
+}
+ ul li a{
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 0 ;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fde907;
+    font-family: sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 1;
+}
+ul li a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+ ul li a::after{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: -1;
+}
+ ul a:hover{
+    color: whitesmoke;
+}
+ ul a:hover::before{
+    transform: scalezY(1);
+    opacity: 1;
+}
+ ul li a::after{
+    transform: scaleY(1);
+    opacity: 1;
+}
+body {
+    text-align: left
+    
+  }
+  
+  h1 {
+    color: yellow;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 180px;
+    padding-left: 70px;
+    
+  }
+  
+  p {
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    padding-left: 200px;
+   
+  }
+  span{
+    color: aliceblue;
+
+  }
+  .btn {
+    border: 2px solid black;
+    border-radius: 9px;
+    
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: #012822;
+
+    background-color: #fde907;
+    font-weight: 400;
+    font-family: fantasy;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 150px;
+    right: 50%;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #f9c80e;
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* Add your custom styles here */
+.thread-images {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+    left: 200px;
+    transform: translateX(50%);
+    padding-bottom: 6px;
+    align-content: space-between;
+}
+
+.thread-item {
+    margin-bottom: 5px; /* Add some space between items */
+}
+
+.social-icon {
+    margin-right: 115px; /* Add some space between icon and image */
+}
+
+.thread-image img {
+    width: 20px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+}
+.foot{
+    position: fixed;
+    top: 96%;
+    font-weight: normal;
+    font-size: small;
+   
+}
+h6 {
+    margin: 0;
+    position: fixed;
+    bottom: 8px;
+    left: 5px;
+
+}
